@@ -17,11 +17,11 @@ Document utilisé pour résoudre ce TP : https://redis.io/docs/latest/commands/a
 # 2. Stockage de Messages
 ## 1:
 
-    RPUSH messages:user:1001 "Hello, how are you?"
+    RPUSH messages:user:1001 "Salam?"
 
 ## 2:
 
-    RPUSH messages:user:1001 "I am doing well, thank you!"
+    RPUSH messages:user:1001 "Hello!"
 
 ## 3:
 
@@ -30,15 +30,15 @@ Document utilisé pour résoudre ce TP : https://redis.io/docs/latest/commands/a
 #  3. Gestion de Listes de Tâches
 ## 1:
 
-    RPUSH tasks:user:1001 "Buy groceries" "Complete assignment" "Read a book"
+    RPUSH tasks:user:1001 "One" "Two" "five"
 
 ## 2:
 
-    RPUSH tasks:user:1001 "Go for a walk"
+    RPUSH tasks:user:1001 "nine"
     
 ## 4:
 
-    LREM tasks:user:1001 1 "Complete assignment"
+    LREM tasks:user:1001 1 "One"
     
 ## 5:
 
