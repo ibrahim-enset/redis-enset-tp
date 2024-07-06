@@ -1,15 +1,17 @@
+Document utilisé pour résoudre ce TP : https://redis.io/docs/latest/commands/acl/
+
 # 1. Gestion des Sessions Utilisateurs
 ## 1:
 
-     HSET session:123 user_id 123 name "John Doe" email "john.doe@example.com" login_date "2024-07-06"
+     SET session:123 user_id 123 name "ibrahim ahdadou" email "i.ahdadou@gmail.com" login_date "2024-07-06"
 
 ## 2:
 
-    HSET session:user:1001 email "john.doe@example.com"
+    SET session:user:1001 email "i.ahdadou@gmail.com"
 
 ## 3 :
 
-    HGETALL session:user:1001
+    GETALL session:user:1001
 
 
 # 2. Stockage de Messages
